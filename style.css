@@ -626,7 +626,6 @@ svg {
   flex-shrink: 0;
   margin: 0 auto;
   width: 50%;
-  
 }
 
 .steps__column--left--img {
@@ -1272,16 +1271,18 @@ pre {
 
 .pricing__blob {
   pointer-events: none;
-    position: absolute;
-    left: -160px;
-    bottom: -160px;
-    z-index: -20;
-    height: 20rem;
-    width: 20rem;
-    --tw-translate-x: -50%;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-    --tw-translate-y: 50%;
-    opacity: 0.25;
+  position: absolute;
+  left: -160px;
+  bottom: -160px;
+  z-index: -20;
+  height: 20rem;
+  width: 20rem;
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  --tw-translate-y: 50%;
+  opacity: 0.25;
 }
 
 /* ----------------------TESTIMONIALS---------------------- */
@@ -1598,7 +1599,9 @@ pre {
   height: 14rem;
   width: 14rem;
   --tw-translate-x: 66.67%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   --tw-translate-y: -3rem;
   --tw-text-opacity: 1;
   color: rgb(79 209 197 / var(--tw-text-opacity));
@@ -1614,7 +1617,9 @@ pre {
   height: 16rem;
   width: 16rem;
   --tw-translate-x: -66.67%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   --tw-text-opacity: 1;
   color: rgb(100 21 255 / var(--tw-text-opacity));
   opacity: 0.15;
@@ -1945,8 +1950,6 @@ pre {
 
 /* **************FOR SMALL PHONES, TABLETS & LARGE SMARTPHONES********************* */
 
-
-
 /* -------------------MAX-WIDTH 1024PX-------------------- */
 @media (max-width: 1024px) {
   .nav__links {
@@ -2013,8 +2016,6 @@ pre {
   .get-started__text {
     text-align: left;
   }
-
-
 }
 
 /* -------------------MAX-WIDTH 900PX------------------ */
@@ -2026,8 +2027,6 @@ pre {
   .plans__container {
     flex-direction: column;
   }
-
-
 
   .pricing__para {
     padding: 0 100px;
@@ -2187,7 +2186,7 @@ pre {
 
   .features__title--description {
     font-size: 16px;
-    padding: 0 32px
+    padding: 0 32px;
   }
 
   .services__row--container {
@@ -2200,8 +2199,7 @@ pre {
   .services__item {
     flex-direction: row;
     width: 45%;
-    align-items:start;
-    
+    align-items: start;
   }
   .services__description {
     margin: 16px 0 0;
@@ -2234,42 +2232,45 @@ pre {
     padding-bottom: 6rem;
   }
 
-  .steps__column--left {
-    width: 384px;
-    display: flex;
-    align-items: center;
-  }
-
-  .steps__column--left--img {
-    max-width: 380px;
-  }
-
-  .steps__column--right--content {
-    width: 384;
-    padding: 0 0 32px 32px;
-  }
-
   .content__container {
     flex-direction: row-reverse;
   }
 
-  /* .content__column--left {
-    width: 40%;
+  .content__column--text {
+    padding-right: 38px;
   }
 
-  .content__column--text {
-    width: 80%;
-  } */
+  .content__column--left {
+    max-width: 50%;
+    padding: 0;
+  }
+
+  .svg__1 {
+    width: 6rem;
+    height: 6rem;
+    bottom: -50px;
+  }
 
   .values__column--heading {
     font-size: 36px;
+    max-width: 100%;
   }
 
   .values__container--columns {
     padding: 0;
+    flex-direction: row-reverse;
   }
 
-  .values__column--para {
+  .content__column--right {
+    width: 100%;
+  }
+
+  .values__column--left {
+    padding-right: 4rem;
+    margin: 0;
+  }
+
+   .values__column--para {
     font-size: 16px;
   }
 
@@ -2292,6 +2293,8 @@ pre {
 
   .pricing__para {
     padding: 0 12px;
+    max-width: 36rem;
+    line-height: 1.625;
   }
 
   .testimonials__section--container {
@@ -2300,14 +2303,18 @@ pre {
     margin: 0 auto;
   }
 
+  .testimonials__column--right {
+    padding-left: 48px;
+    padding-right: 0;
+  }
+
   .testimonials__column--right--heading {
     font-size: 36px;
   }
 
   .testionials__column--left {
     margin: 0;
-    width: 45%;
-    padding-right: 8px;
+    width: 40%;
   }
 
   .testimonials__row {
@@ -2318,13 +2325,12 @@ pre {
     flex-direction: row;
   }
 
-  .testimonials__column--right {
-    padding: 0;
-    margin: 0;
-  }
-
   .sc1heading__user-container {
     align-items: left;
+  }
+
+  .user__container {
+    padding-right: 0;
   }
 
   .user-name {
@@ -2350,10 +2356,216 @@ pre {
     flex-direction: column;
   }
 
+  .get-started__text--container {
+    width: 100%;
+  }
+
   .get-started__text {
     text-align: center;
     padding-bottom: 24px;
   }
+
+  .footer__design--blob2 {
+    bottom: -180px;
+  }
+
+ 
+
+
+}
+
+/* -------------------MAX-WIDTH 640PX--------------------- */
+@media (max-width: 640px) {
+  .features__row {
+    padding-top: 80px;
+  }
+
+  .services__item {
+    width: 60%;
+  }
+
+  .content__container {
+    flex-direction: column;
+  }
+
+  .content__column--text {
+    width: 100%;
+    margin-top: 4rem;
+    padding: 0;
+  }
+
+  .content__column--heading {
+    padding: 0 18px 0;
+  }
+
+  .content__column--right {
+    max-width: 28rem;
+  }
+
+  .content__column--left {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+  }
+
+  .steps__column--container {
+    flex-direction: column;
+  }
+
+  .steps__column--left {
+    width: 80%;
+  }
+
+  .svg__1 {
+    left: 40%;
+  }
+
+  .steps__column--right--content {
+    margin-top: 32px;
+    padding-left: 0;
+  }
+
+  .steps__column--right--subheading,
+  .steps__column--right--heading {
+    text-align: center;
+  }
+
+.steps {
+  flex-direction: column;
+  text-align: center;
+} 
+
+.scr01--text {
+  margin-top: 12px;
+  margin-left: 0;
+  max-width: 18rem;
+}
+
+.values__container--columns {
+  flex-direction: column;
+}
+
+.values__column--right {
+ max-width: 28rem;
+}
+
+.values__column--left {
+  margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 28rem;
+    margin-top: 4rem;
+    padding-right: 0;
+}
+
+.values__column--subheading {
+  text-align: center;
+}
+
+.values__column--heading {
+  text-align: center;
+  padding: 0 12px;
+}
+
+.values__column--text {
+  text-align: center;
+}
+
+.values__column--para {
+  text-align: center;
+  font-size: 14px;
+}
+.values__column--description {
+  text-align: center;
+}
+
+.values__column--features {
+  margin: 0 48px;
+}
+
+.values__column--features--content1 {
+  margin-right: 0;
+}
+
+.values__column--features--content2 {
+  margin-right: 0;
+}
+
+.values__column--header-container {
+  justify-content: center;;
+}
+
+.pricing__heading {
+ font-size: 38px;
+}
+
+.testimonials__column--container {
+  flex-direction: column;
+}
+
+.testionials__column--left {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.testimonials__column--right {
+  margin: 64px 64px 0;
+  padding: 0;
+  text-align: center;
+}
+
+.testimonials__column--right--subheading {
+  text-align: center;
+}
+
+.testimonials__column--right--heading {
+  text-align: center;
+}
+
+.testimonials__column--right--para {
+  text-align: center;
+  font-size: 16px;
+}
+
+.testimonials__column--right--container {
+ align-items: center;
+}
+
+.testimonials__star {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.control-arrows--container {
+  padding-left: 32px;
+}
+
+.get-started__text--container {
+  padding-left: 32px;
+  padding-right: 32px;
+  line-height: 1.5;
+}
+
+.copywrite__row {
+  flex-direction: column;
+}
+
+.rights--reserved {
+  margin: 32px;
+}
+
+.footer__icons {
+  margin-left: 16px;
+}
+
+}
+
+
+
+
+
 }
 
 /* --------------------MAX-WIDTH 540PX----------------- */
